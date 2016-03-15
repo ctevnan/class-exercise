@@ -17,7 +17,7 @@ app.use(express.static('public'));
 mongoose.connect('mongodb://localhost/week18day3populate');
 var db = mongoose.connection;
 
-db.on('error', function(err) {
+db.on('error', function (err) {
   console.log('Mongoose Error: ', err);
 });
 db.once('open', function() {
